@@ -1,38 +1,143 @@
-.App {
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+/* 강원교육튼튼체 */
+@font-face {
+  font-family: 'gangwonEdu';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input[type="submit"],
+button,
+a {
+  cursor: pointer;
+}
+
+/* default */
+:root {
+  --main-color: #ff6f0f;
+}
+
+* {
+  box-sizing: border-box;
+  word-break: keep-all;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: -0.04em;
+}
+
+html * {
+  font-family: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inner1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.font_gangwon {
+  font-family: 'gangwonEdu', sans-serif;
+}
+
+.btn_style_box {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: .8rem 1.6rem;
+  background-color: #fff;
+  border: 1px solid #d1d3d8;
+  border-radius: 5px;
+}
+
+.btn_style_box:hover {
+  background-color: #f2f3f6;
+}
+
+.btn_style_carrot {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  background: var(--main-color);
+  font-weight: bold;
+  color: #fff;
   text-align: center;
+  border-radius: 10px;
+  border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contents_wrap {
+  margin-top: 64px;
 }

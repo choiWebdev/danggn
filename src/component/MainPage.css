@@ -1,0 +1,42 @@
+.main_section {
+  padding: 20rem 0;
+  position: relative;
+}
+
+.main_section > .inner {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_section .big_title {
+  font-size: 6rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.main_section .section_txt {
+  font-size: 2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.main_section_download {
+  background-color: #FFFAE0;
+}
+
+.btn_wrap {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn_download {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+  height: 5.5rem;
+}

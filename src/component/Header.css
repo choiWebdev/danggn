@@ -1,0 +1,35 @@
+#header {
+  width: 100%;
+  height: 64px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#header > .inner1200 {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2rem;
+}
+
+#header #logo {
+  margin-right: 3.6rem;
+}
+
+#header #logo img {
+  width: 65px;
+}
+
+#gnb {
+  display: flex;
+  gap: 3.6rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #555;
+}
+
+#gnb a:hover {
+  opacity: 0.7;
+}
