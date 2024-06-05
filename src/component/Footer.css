@@ -1,0 +1,145 @@
+#footer {
+  padding: 5rem 0;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+#footer a:hover {
+  opacity: .7;
+}
+
+.ft_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ft_submenu {
+  width: 40rem;
+}
+
+.ft_submenu ul {
+  display: flex;
+}
+
+.ft_submenu li {
+  flex: 1;
+}
+
+.ft_submenu a {
+  display: block;
+  color: #666;
+}
+
+.ft_submenu a + a {
+  margin-top: 1rem;
+}
+
+.ft_download {
+  font-size: 1.4rem;
+}
+
+.ft_download .ft_tit {
+  font-weight: bold;
+}
+
+.ft_download .btn_download {
+  width: 15rem;
+  height: 4.6rem;
+  margin-top: 1rem;
+  font-size: inherit;
+}
+
+.ft_bot {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  font-size: 1.4rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+  position: relative;
+}
+
+.ft_nav {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.ft_nav a {
+  font-weight: bold;
+}
+
+.ft_sns {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.ft_sns .sns_icon {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  background: no-repeat center/cover;
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+.ft_sns .sns_facebook {
+  background-image: url(../img/sns_facebook.svg);
+}
+
+.ft_sns .sns_instagram {
+  background-image: url(../img/sns_instagram.svg);
+}
+
+.ft_sns .sns_youtube {
+  background-image: url(../img/sns_youtube.svg);
+  background-size: 2.5rem 2.5rem;
+}
+
+.ft_sns .sns_blog {
+  background-image: url(../img/sns_blog.svg);
+}
+
+.select_language {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.select_language:hover {
+  background-color: #f7f7f7;
+}
+
+.select_language > img {
+  width: 2rem;
+}
+
+#language_list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #eee;
+  display: none;
+}
+
+#language_list li {
+  padding: 0.6rem 1rem;
+  font-size: 1.3rem;
+}
+
+#language_list li:hover {
+  background-color: #f7f7f7;
+}
+
+#language_list li + li {
+  border-top: 1px solid #eee;
+}
