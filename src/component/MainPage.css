@@ -1,18 +1,45 @@
 .main_section {
-  padding: 20rem 0;
   position: relative;
 }
 
 .main_section > .inner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_section_left > .inner {
+  flex-direction: row-reverse;
+}
+
+.main_section .img_box {
+  width: 65%;
+}
+
+.main_section .img_box img {
+  display: block;
+  width: 100%;
+}
+
+.main_section .txt_box {
+  display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
   justify-content: center;
   align-items: flex-start;
+  width: 35%;
+}
+
+.main_section .small_title {
+  font-size: 1.8;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: -1rem;
 }
 
 .main_section .big_title {
-  font-size: 6rem;
+  font-family: 'gangwonEdu', sans-serif;
+  font-size: 4.6rem;
   font-weight: bold;
   line-height: 1.3;
 }
@@ -39,4 +66,94 @@
   align-items: center;
   width: 18rem;
   height: 5.5rem;
+}
+
+/* 개별 섹션 */
+/* 앱 다운로드 섹션 */
+.main_section_download {
+  padding: 0;
+}
+
+.main_section_download > .inner {
+  align-items: center;
+}
+
+.main_section_download .txt_box {
+  gap: 4rem;
+  width: 50%;
+}
+
+.main_section_download .big_title {
+  font-size: 6rem;
+}
+
+.main_section_download .img_box {
+  width: 65%;
+  margin-right: -15rem;
+}
+
+.main_section_download .img_box img {
+  display: block;
+  width: 100%;
+}
+
+/* 메인섹션 - 중고거래 */
+.main_section01 {
+  background-color: #f7f7f7;
+}
+
+/* 메인섹션 - 동네생활 */
+.main_section02 {
+  background-color: #FFF8F1;
+}
+
+.icon_list {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon_list > li {
+  flex: 1;
+}
+
+.icon_list .icon {
+  width: 5.6rem;
+  height: auto;
+  aspect-ratio: 1/1;
+  background: no-repeat center/cover;
+}
+
+.icon_list .icon_club {
+  background-image: url(../img/icon_club.svg);
+}
+
+.icon_list .icon_question {
+  background-image: url(../img/icon_question.svg);
+}
+
+.icon_list .icon_lost {
+  background-image: url(../img/icon_lost.svg);
+}
+
+.icon_list .icon_tit {
+  padding: 1.6rem 0 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.icon_list .icon_txt {
+  font-size: 1.3rem;
+  color: #666;
+  line-height: 1.3;
+  word-break: keep-all;
+}
+
+/* 메인섹션 - 알바 */
+.main_section03 {
+  background-color: #f7f7f7;
+}
+
+/* 메인섹션 - 동네업체 */
+.main_section04 {
+  background-color: #F6FDEC;
 }

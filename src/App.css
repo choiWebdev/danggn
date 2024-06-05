@@ -36,10 +36,6 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-body {
-	line-height: 1;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -63,6 +59,10 @@ input[type="submit"],
 button,
 a {
   cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
 }
 
 /* default */
@@ -92,6 +92,11 @@ body {
   font-size: 1.6rem;
 }
 
+::selection {
+  color: #212529;
+  background: #FFB98B;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -100,6 +105,12 @@ a {
 .inner1200 {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner768 {
+  width: 100%;
+  max-width: 768px;
   margin: 0 auto;
 }
 
@@ -136,6 +147,27 @@ a {
   text-align: center;
   border-radius: 10px;
   border: none;
+}
+
+.btn_style_carrot:hover {
+  background-color: #f06000;
+}
+
+.btn_style_graybox {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 1.8rem 2rem;
+  background-color: #E9ECEF;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.btn_style_graybox:hover {
+  background-color: #dee2e6;
 }
 
 .contents_wrap {
