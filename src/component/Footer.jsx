@@ -1,4 +1,4 @@
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import googlePlayImg from './../img/icon_gooleplay_black.svg';
 import appStoreImg from './../img/icon_appstore_black.svg';
 import selectLanguageIcon from './../img/icon_language.svg';
@@ -18,10 +18,9 @@ const languageDrop = () => {
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="inner768">
+      <div className="inner">
         <div className="ft_top">
           <nav className="ft_submenu">
-            <BrowserRouter>
               <ul>
                 <li>
                   <Link to="">중고거래</Link>
@@ -40,12 +39,10 @@ export default function Footer() {
                   <Link to="">인재 채용</Link>
                 </li>
               </ul>
-            </BrowserRouter>
           </nav>
           <div className="ft_download">
             <p className="ft_tit">당근 앱 다운로드</p>
             <div className="btn_wrap">
-              <BrowserRouter>
                 <Link className="btn_style_graybox btn_download" to="">
                   <img src={googlePlayImg} alt="구글 플레이에서 다운로드" />
                   Google Play
@@ -54,7 +51,6 @@ export default function Footer() {
                   <img src={appStoreImg} alt="앱 스토어에서 다운로드" />
                   App Store
                 </Link>
-              </BrowserRouter>
             </div>
           </div>
         </div>
@@ -67,29 +63,23 @@ export default function Footer() {
             <address className="ft_info"><strong>전화</strong> 1544-9796 | <strong>고객문의</strong> cs@daangnservice.com</address>
           </div>
           <nav className="ft_nav">
-            <BrowserRouter>
               <Link to="">제휴 문의</Link>
               <Link to="">광고 문의</Link>
               <Link to="">PR 문의</Link>
               <Link to="">IR 문의</Link>
-            </BrowserRouter>
           </nav>
           <nav className="ft_nav">
-            <BrowserRouter>
               <Link to="">이용약관</Link>
               <Link to="">개인정보처리방침</Link>
               <Link to="">위치기반서비스 이용약관</Link>
               <Link to="">이용자보호 비전과 계획</Link>
               <Link to="">청소년보호정책</Link>
-            </BrowserRouter>
           </nav>
           <div className="ft_sns">
-            <BrowserRouter>
               <Link className="sns_icon sns_facebook" to="">페이스북</Link>
               <Link className="sns_icon sns_instagram" to="">인스타그램</Link>
               <Link className="sns_icon sns_youtube" to="">유튜브</Link>
               <Link className="sns_icon sns_blog" to="">네이버 블로그</Link>
-            </BrowserRouter>
             <div className="select_language" onClick={languageDrop} >
               <img src={selectLanguageIcon} alt="언어" />
               <span>한국</span>

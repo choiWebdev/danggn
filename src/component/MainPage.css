@@ -2,7 +2,26 @@
   position: relative;
 }
 
-.main_section > .inner {
+.main_section > .inner1024 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_section_left > .inner1024 {
+  flex-direction: row-reverse;
+}
+
+.main_section .img_box {
+  width: 65%;
+}
+
+.main_section .img_box img {
+  display: block;
+  width: 100%;
+}
+
+.main_section .txt_box {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +93,7 @@
   padding: 0;
 }
 
-.main_section_download > .inner {
+.main_section_download > .inner1024 {
   align-items: center;
 }
 
